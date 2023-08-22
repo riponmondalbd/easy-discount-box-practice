@@ -4,6 +4,10 @@ document.getElementById('btn-apply').addEventListener('click', function () {
     const previousBalance = parseFloat(previousBalanceString);
 
     // discount calculation
+    if (isNaN(previousBalance)) {
+        alert('Please provide a valid number');
+        return;
+    }
     const discount = previousBalance - (previousBalance * 0.3);
 
     // set value for output
