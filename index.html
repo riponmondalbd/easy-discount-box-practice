@@ -15,15 +15,18 @@
     <main>
         <section>
             <div class="w-2/3 bg-orange-500	 mx-auto p-12 ">
-                <h1 class="text-center text-white text-3xl text-white">Price: 1000</h1>
-                <button
+                <h1 class="text-center text-white text-3xl text-white">Price: <input class="text-black"
+                        id="balance-input" type="text"></h1>
+                <button id="btn-apply"
                     class="bg-violet-600 hover:bg-violet-400 px-5 py-3 text-white rounded-xl block mx-auto mt-8">Apply</button>
-                <span class="block text-center mt-8">
-                    <h3 class="inline-block text-2xl text-white">Please pay : </h3> <input type="text">
-                </span>
+
+                <h3 class="text-2xl text-white text-center block mt-8">Please Pay : <span id="output-value"></span></h3>
             </div>
         </section>
     </main>
+
+    <!-- add script -->
+    <script src="js/discount.js"></script>
 </body>
 
 </html>
