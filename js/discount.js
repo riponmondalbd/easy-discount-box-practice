@@ -7,4 +7,7 @@ document.getElementById('btn-apply').addEventListener('click', function () {
 
     const payField = document.getElementById('pay-field');
     payField.innerText = discount;
+
+    // clear input field value
+    priceField.value = '';
 })
